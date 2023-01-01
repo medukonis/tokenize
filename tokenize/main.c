@@ -15,7 +15,7 @@ int main(int argc, const char * argv[])
     int returnedLength = 0;
     int position = 0;
     int testing = 0;
-    char *userInput = "Hello! We () are {} ~ tokenizing *& over $# 43% here.";
+    const char *userInput = "Hello! We () are {} ~ tokenizing *& over $# 43% here.";  /* =argv[1] perhaps if you want to get this from the user at launch */
     while(userInput[position] != '\0')
     {
         length++;
@@ -32,8 +32,8 @@ int main(int argc, const char * argv[])
             printf("-");
     }
     printf("\n");
-   /* printf("returnedLength: %d\n", returnedLength);
-    printf("testing: %d\n", testing); */
+    printf("returnedLength: %d\n", returnedLength);
+    printf("testing: %d\n", testing);
     free(newArray);
     return 0;
 }

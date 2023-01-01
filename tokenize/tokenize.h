@@ -10,5 +10,5 @@
 #ifndef tokenize_h
 #define tokenize_h
 
-char *tokenize (char[], int, int*);
+char *tokenize (const char[], int, int*);
 #endif /* tokenize_h */

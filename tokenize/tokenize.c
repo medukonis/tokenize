@@ -9,7 +9,7 @@
  Summary: Performs word tokenization.  Takes a variable size char array as input, cleans it, separates words by single space, while discarding everything else.  3rd input is integer pointer to guide the driver program of how large the returned array is.
  */
 
-char *tokenize(char input[], int inputLength, int *returnedArraySize)
+char *tokenize(const char input[], int inputLength, int *returnedArraySize)
 {
     char *arrayOfinputs = malloc((inputLength) * sizeof(char));
     int  position       = 0;              /* Keeping track of the cursor position only increment on valid entries */
